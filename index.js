@@ -29,7 +29,7 @@ const data = ["a", "1", "334", "4", "R"];
 //   res.json(data);
 // });
 
-app.post('/Api', (req, res) => {
+app.post('/bfhl', (req, res) => {
   try {
    
     const inputArray = req.body.array;
