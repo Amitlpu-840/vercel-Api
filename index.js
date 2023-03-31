@@ -22,6 +22,13 @@ const port = 3000;
 
 app.use(express.json());
 
+app.use(express.json());
+
+const data = ["a", "1", "334", "4", "R"];
+app.get('/Api', (req, res) => {
+  res.json(data);
+});
+
 app.post('/Api', (req, res) => {
   try {
    
