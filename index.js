@@ -12,8 +12,7 @@ app.post('/bfhl', (req, res) => {
   try {
    
     const inputArray = req.body.array;
-
-
+    
     const fullName = 'Amit Giri';
     const dob = "02-05-2002";
     const email = "thisisag840@gmail.com";
@@ -21,8 +20,6 @@ app.post('/bfhl', (req, res) => {
 
 
     const userId = `${fullName.toUpperCase()}_${dob.split('-').join('')}`;
-
-    
     const evenNumbers = inputArray.filter(num => num % 2 === 0);
     const oddNumbers = inputArray.filter(num => num % 2 !== 0);
     const alphabets = inputArray.filter(char => /[a-zA-Z]/.test(char)).map(char => char.toUpperCase());
