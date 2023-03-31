@@ -40,10 +40,10 @@ app.post('/bfhl', (req, res) => {
     // const email = req.body.email;
     // const collegeRollNumber = req.body.college_roll_number;
 
-    const fullName = 'amit';
-    const dob = "12-12-2022";
-    const email = "e@gmail.com";
-    const collegeRollNumber = "12";
+    const fullName = 'Amit Giri';
+    const dob = "02-05-2002";
+    const email = "thisisag840@gmail.com";
+    const collegeRollNumber = "12008090";
 
 
     const userId = `${fullName.toLowerCase()}_${dob.split('-').join('')}`;
