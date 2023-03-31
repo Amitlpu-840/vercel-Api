@@ -25,11 +25,11 @@ app.use(express.json());
 app.use(express.json());
 
 const data = ["a", "1", "334", "4", "R"];
-app.get('/', (req, res) => {
-  res.json(data);
-});
+// app.get('/', (req, res) => {
+//   res.json(data);
+// });
 
-app.post('/Api', (req, res) => {
+app.get('/Api', (req, res) => {
   try {
    
     const inputArray = req.body.array;
