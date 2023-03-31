@@ -1,44 +1,18 @@
-// import express from 'express'
-
-// const app = express()
-// const PORT = 4000
-
-// app.listen(PORT, () => {
-//   console.log(`API listening on PORT ${PORT} `)
-// })
-
-// app.get('/', (req, res) => {
-//   res.send('Hey this is my API running 🥳')
-// })
-
-// app.get('/about', (req, res) => {
-//   res.send('This is my about route..... ')
-// })
-// module.exports = app
-
 import express from 'express'
 const app = express();
 const port = 3000;
 
 app.use(express.json());
 
-app.use(express.json());
 
 const data = ["a", "1", "334", "4", "R"];
-// app.get('/', (req, res) => {
-//   res.json(data);
-// });
+
 
 app.post('/bfhl', (req, res) => {
   try {
    
     const inputArray = req.body.array;
 
-  
-    // const fullName = req.body.full_name;
-    // const dob = req.body.dob;
-    // const email = req.body.email;
-    // const collegeRollNumber = req.body.college_roll_number;
 
     const fullName = 'Amit Giri';
     const dob = "02-05-2002";
