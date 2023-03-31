@@ -20,7 +20,7 @@ app.post('/bfhl', (req, res) => {
     const collegeRollNumber = "12008090";
 
 
-    const userId = `${fullName.toLowerCase()}_${dob.split('-').join('')}`;
+    const userId = `${fullName.toUpperCase()}_${dob.split('-').join('')}`;
 
     
     const evenNumbers = inputArray.filter(num => num % 2 === 0);
