@@ -25,7 +25,7 @@ app.use(express.json());
 app.use(express.json());
 
 const data = ["a", "1", "334", "4", "R"];
-app.get('/Api', (req, res) => {
+app.get('/', (req, res) => {
   res.json(data);
 });
 
