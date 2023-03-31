@@ -29,16 +29,21 @@ const data = ["a", "1", "334", "4", "R"];
 //   res.json(data);
 // });
 
-app.get('/Api', (req, res) => {
+app.post('/Api', (req, res) => {
   try {
    
     const inputArray = req.body.array;
 
   
-    const fullName = req.body.full_name;
-    const dob = req.body.dob;
-    const email = req.body.email;
-    const collegeRollNumber = req.body.college_roll_number;
+    // const fullName = req.body.full_name;
+    // const dob = req.body.dob;
+    // const email = req.body.email;
+    // const collegeRollNumber = req.body.college_roll_number;
+
+    const fullName = 'amit';
+    const dob = "12-12-2022";
+    const email = "e@gmail.com";
+    const collegeRollNumber = "12";
 
 
     const userId = `${fullName.toLowerCase()}_${dob.split('-').join('')}`;
