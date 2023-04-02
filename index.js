@@ -7,6 +7,15 @@ app.use(express.json());
 
 const data = ["a", "1", "334", "4", "R"];
 
+app.get( '/bfhl', (req,res)=>{
+  try{
+    res.json("posted request received");
+  }
+  catch(err) {
+    console.error(err);
+   res.status(404).json({message: err.message});
+} )
+
 
 app.post('/bfhl', (req, res) => {
   try {
